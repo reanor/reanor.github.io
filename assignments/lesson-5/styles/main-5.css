@@ -2,9 +2,13 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-body {
+body {    
   font-size: 16px;
   /* Declare the base font-family - from google font api or other */
+    max-width: 56em;
+    border: 0px;
+    padding: 20px;
+    margin: auto;
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -12,32 +16,150 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 }
 
 header {}
-header h1 {}
-header img {}
-header .subheading {}
 
-nav {}
+header h1 {
+    color: #0049AF        
+    }
+
+header img {
+    float: left;
+    border: 0px;
+    padding: 5px 1px;
+    margin: 0px;
+}
+
+header .subheading {
+    color: #00000C
+    }
+
+nav {
+    padding: 4px;
+    margin: 1px;
+    width: 100%;
+    float:middle;
+    }
+
 nav button {}
-nav ul {}
-nav ul li {}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
 
-main {}
-main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
+nav ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4A91D3; 
+}
 
-section {}
+nav ul li { 
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 13px 16px;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background-color: #0049AF;
+}
+
+nav ul li a:hover {
+    background-color: #0049AF;
+}
+
+main {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    }
+
+main h2 {
+    text-align: center;
+}
+
+main figure { margin: 0 0 .2rem 2%; width:96%
+
+    }
+main figure img { 
+    display: block;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
+}
+
+section {
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+.highlow{
+    float: left;
+    width: 20%;
+}
+
+.current{
+    float: left;
+    width: 60%;
+    }
+
+.conditions {
+    float: left;
+    width: 10%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .forecast { display: none; }  /* hide it on small screens */
+}
+
+.forecast{
+    clear:both;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left:auto; 
+    margin-right:auto;
+    float: middle;
+    }
+
+table, th, td {
+    height: 30px;
+    vertical-align: bottom;
+    border: 1px solid black;
+}
+
+article{
+    clear:both;
+    padding: 15px 0 0 0;
+}
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: ???; /* fill the page in the small/phone view */
   margin: ???;
 }
 
-footer {}
-footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #4A91D3; 
+} 
+
+footer-bar {
+    background-color: #4A91D3; 
+}
+
+footer>p {
+}/* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
