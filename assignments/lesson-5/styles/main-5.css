@@ -190,8 +190,7 @@ article{
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     height: auto; 
     width: auto; 
-    max-width: 300px; 
-    max-height: 300px;
+    max-width: 80%; 
     margin: 0 1em 0 1em;
     }
 
