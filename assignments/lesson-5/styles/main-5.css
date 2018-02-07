@@ -24,7 +24,7 @@ header h1 {
 header img {
     float: left;
     border: 0px;
-    padding: 5px 1px;
+    padding: 5px 3px;
     margin: 0px;
 }
 
@@ -34,12 +34,14 @@ header .subheading {
 
 nav {
     padding: 4px;
-    margin: 1px;
+    margin: 7px;
     width: 100%;
-    float:middle;
-    }
+    max-width: 900px;
+}
 
 nav button {}
+
+
 
 nav ul { 
     list-style-type: none;
@@ -47,11 +49,13 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: #4A91D3; 
+    
 }
 
 nav ul li { 
+    font-size: 13px;
     float: left;
-    border-right:1px solid #bbb;
+    border-right:1px solid #fff;
 }
 
 nav ul li:last-child {
@@ -62,7 +66,7 @@ nav ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 13px 16px;
+    padding: 10px 16px;
     text-decoration: none;
 }
 
@@ -108,12 +112,12 @@ section {
 
 .current{
     float: left;
-    width: 60%;
+    width: 53%;
     }
 
 .conditions {
     float: left;
-    width: 10%;
+    width: 22%;
 }
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
