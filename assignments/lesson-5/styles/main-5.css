@@ -151,7 +151,8 @@ section {
 
 .conditions {
     float: left;
-    width: 35%;
+    width: 30%;
+    margin: 0 5px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
@@ -183,7 +184,7 @@ article{
     color: #00000C;
     clear: both;
     padding: 15px 0 0 0;
-    margin: 1em 0 0 1em;
+    margin: 1em 1em 0 1em;
     overflow:auto;
 }
 
