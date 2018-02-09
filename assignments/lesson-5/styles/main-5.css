@@ -12,16 +12,16 @@ body {
 }
     @font-face {
     font-family: 'bebas_neuebook';
-    src: url('bebasneue_book-webfont.woff2') format('woff2'),
-         url('bebasneue_book-webfont.woff') format('woff');
+    src: url('fonts/bebasneue_book-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue_book-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'bebas_neueregular';
-    src: url('bebasneue_regular-webfont.woff2') format('woff2'),
-         url('bebasneue_regular-webfont.woff') format('woff');
+    src: url('fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -29,8 +29,8 @@ body {
     
 @font-face {
     font-family: 'bebas_neuethin';
-    src: url('bebasneue_thin-webfont.woff2') format('woff2'),
-         url('bebasneue_thin-webfont.woff') format('woff');
+    src: url('fonts/bebasneue_thin-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue_thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -44,7 +44,8 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 header {}
 
 header h1 {
-    font-family: 'bebas_neueregular';
+    font-family: "bebas_neueregular", pmingliu;
+    text-transform: uppercase;
     color: #0049AF        
     }
 
@@ -56,10 +57,13 @@ header img {
 }
 
 header .subheading {
+    font-family: "bebas_neueregular", pmingliu;
+    
     color: #00000C
     }
 
 nav {
+    font-family: "bebas_neuebook", arial solid;
     float: left;
     padding: 5px 0 0;
     margin: 8px 0;
@@ -111,6 +115,7 @@ nav ul li.right {float: right;}
 }
 
 main {
+    font-family: "bebas_neuebook", arial narrow;
     background: #BCDDCE;
     clear:both;
     padding: 25px 0;
@@ -196,7 +201,8 @@ article p.town-article img {  /* This structure refers to img elements that are 
     }
 
 footer {
-    font-family: 'bebas_neuethin';
+    font-family: "bebas_neuethin", agency fb;
+    text-transform:uppercase;
     color: #fff;
     clear:both;
     text-align: center;
@@ -205,7 +211,6 @@ footer {
 } 
 
 .aside {
-    font-family: 'bebas_neuethin';
     clear:both;
     text-align: center;
     padding: 5px 0;
