@@ -18,23 +18,14 @@ body {
     font-style: normal;
 }
 
-@font-face {
+    @font-face {
     font-family: 'bebas_neueregular';
     src: url('fonts/bebasneue_regular-webfont.woff2') format('woff2'),
          url('fonts/bebasneue_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
-}
-    
-@font-face {
-    font-family: 'bebas_neuethin';
-    src: url('fonts/bebasneue_thin-webfont.woff2') format('woff2'),
-         url('fonts/bebasneue_thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-    }
+}  
   /* Declare the base font-family - from google font api or other */
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -195,14 +186,12 @@ article{
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     height: auto; 
-    width: auto; 
-    max-width: 80%; 
+    width: 100%; 
     margin: 0 1em 0 1em;
     }
 
 footer {
-    font-family: "bebas_neuethin", agency fb;
-    text-transform:uppercase;
+    font-family: 'Oswald', sans-serif;
     color: #fff;
     clear:both;
     text-align: center;
