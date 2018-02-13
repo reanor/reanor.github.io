@@ -1,0 +1,218 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {    
+  font-size: 16px;
+    
+    max-width: 56em;
+    border: 0px;
+    padding: 20px;
+    margin: auto;
+}
+    @font-face {
+    font-family: 'bebas_neuebook';
+    src: url('fonts/bebasneue_book-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+    @font-face {
+    font-family: 'bebas_neueregular';
+    src: url('fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}  
+  /* Declare the base font-family - from google font api or other */
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {}
+
+header h1 {
+    font-family: "bebas_neueregular", pmingliu;
+    text-transform: uppercase;
+    color: #0049AF        
+    }
+
+header img {
+    float: left;
+    border: 0px;
+    padding: 5px 3px;
+    margin: 0px;
+}
+
+header .subheading {
+    font-family: "bebas_neueregular", pmingliu;
+    
+    color: #00000C
+    }
+
+nav {
+    font-family: "bebas_neuebook", arial solid;
+    float: left;
+    padding: 5px 0 0;
+    margin: 8px 0;
+}
+
+nav button {}
+
+nav ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4A91D3; 
+    
+}
+
+nav ul li { 
+    float: left;
+    border-right:1px solid #fff;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    display: block;
+    color: #00000C;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    color: white;
+    background-color: #0049AF;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: #0049AF;
+}
+
+nav ul li.right {float: right;}
+
+@media screen and (max-width: 630px){
+    nav ul li.right, 
+    nav ul li {float: none;}
+}
+
+main {
+    font-family: "bebas_neuebook", arial narrow;
+    background: #BCDDCE;
+    clear:both;
+    padding: 25px 0;
+    }
+
+main h2 {
+    text-align: center;
+    color: #00000C;
+}
+
+main figure { margin: 0 0 .2rem 2%; width:96%
+
+    }
+main figure img { 
+    display: block;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
+}
+
+section {
+  text-align: center;
+  color: #00000C;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 500px){   
+    .picture{      
+        content:url("/assignments/lesson-6/franklin-6/images/sun-small.png");
+    } 
+}
+
+.highlow{
+    float: left;
+    width: 30%;
+}
+
+.current{
+    float: left;
+    width: 35%;
+    }
+
+.conditions {
+    float: left;
+    width: 30%;
+    margin: 0 5px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .forecast { display: none; }  /* hide it on small screens */
+}
+
+.forecast{
+    padding: 15px 0 0 0;
+    clear:both;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left:auto; 
+    margin-right:auto;
+    }
+
+table, th, td {
+    height: 30px;
+    vertical-align: bottom;
+    border: 1px solid black;
+}
+
+article{
+    max-width: 800px; 
+    text-align:justify;
+    color: #00000C;
+    clear: both;
+    padding: 15px 0 0 0;
+    margin: 1em 1em 0 1em;
+    overflow:auto;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    height: auto; 
+    width: 100%; 
+    margin: 0 1em 0 1em;
+    }
+
+footer {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    clear:both;
+    text-align: center;
+    padding: 0 0 5px;
+    background-color: #447CBA; 
+} 
+
+.aside {
+    clear:both;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #4A91D3; 
+} 
+
+footer>p {
+}/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
