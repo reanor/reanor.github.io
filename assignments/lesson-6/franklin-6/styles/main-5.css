@@ -132,12 +132,6 @@ section {
   height: auto;
 }
 
-@media screen and (max-width: 400px){   
-    .image{      
-        content:url("/assignments/lesson-6/franklin-6/images/sun-small.png");
-    } 
-}
-
 .highlow{
     float: left;
     width: 30%;
@@ -178,7 +172,7 @@ table, th, td {
 }
 
 article{
-    max-width: 800px; 
+    max-width: 100%; 
     text-align:justify;
     color: #00000C;
     clear: both;
@@ -190,7 +184,7 @@ article{
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: auto; 
     width: 100%; 
-    margin: 0 1em 0 1em;
+    margin: 0 0 0 1em;
     }
 
 footer {
