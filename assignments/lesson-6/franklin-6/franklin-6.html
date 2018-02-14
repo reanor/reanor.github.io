@@ -39,7 +39,11 @@
   <main>
     <h2>The City of Franklin</h2>
     <figure>
-      <img src="images/franklin.jpg" alt="Franklin Weather" width="300" height="200">
+      <img src="images/franklin.jpg" alt="Franklin" sizes = "96vw" 
+           srcset="images/franklin-small.jpg     400w,
+                   images/franklin-medium.jpg    800w,
+                   images/franklin-large.jpg     1000w "
+           >
     </figure>
     <section>
       <h3>Weather Summary</h3>    
@@ -49,8 +53,8 @@
       </div>
       <div class="current">
           <b>Sunny</b>
-        <div class="picture">
-          <img src="images/sun-regular.png" alt="Sun" style="width:auto;">
+        <div class="image">
+          <img src="images/sun-regular.png" alt="Sun">
         </div>
       </div>   
       <div class="conditions">

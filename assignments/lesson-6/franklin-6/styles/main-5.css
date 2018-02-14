@@ -3,7 +3,7 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {    
-  font-size: 16px;
+    font-size: 16px;
     
     max-width: 56em;
     border: 0px;
@@ -117,17 +117,14 @@ main h2 {
     color: #00000C;
 }
 
-main figure { margin: 0 0 .2rem 2%; width:96%
-
+main figure { 
+    margin: 0 2% .2rem 2%; 
+    width:96%;
     }
-main figure img { 
-    display: block;
-    max-width:100%;
-    max-height:100%;
-    width: auto;
-    height: auto;
-}
 
+main figure img { 
+    width:100%;
+}
 section {
   text-align: center;
   color: #00000C;
@@ -135,8 +132,8 @@ section {
   height: auto;
 }
 
-@media screen and (max-width: 500px){   
-    .picture{      
+@media screen and (max-width: 400px){   
+    .image{      
         content:url("/assignments/lesson-6/franklin-6/images/sun-small.png");
     } 
 }
@@ -191,7 +188,7 @@ article{
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    height: auto; 
+    width: auto; 
     width: 100%; 
     margin: 0 1em 0 1em;
     }
