@@ -171,6 +171,12 @@ table, th, td {
     border: 1px solid black;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 article{
     max-width: 100%; 
     text-align:justify;
@@ -181,10 +187,10 @@ article{
     overflow:auto;
 }
 
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+.img_story {
     width: auto; 
-    width: 100%; 
     margin: 0 0 0 1em;
+    float: right;
     }
 
 footer {
