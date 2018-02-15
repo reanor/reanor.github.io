@@ -4,10 +4,9 @@
 
 body {    
     font-size: 16px;
-    
     max-width: 56em;
     border: 0px;
-    padding: 20px;
+    padding: 0 20px;
     margin: auto;
 }
     @font-face {
@@ -32,7 +31,9 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-header {}
+header {
+    background-color: #BCDDCE;
+}
 
 header h1 {
     font-family: "bebas_neueregular", pmingliu;
@@ -49,11 +50,10 @@ header img {
 
 header .subheading {
     font-family: "bebas_neueregular", pmingliu;
-    
     color: #00000C
     }
 
-nav {
+/* nav {
     font-family: "bebas_neuebook", arial solid;
     float: left;
     padding: 5px 0 0;
@@ -69,8 +69,54 @@ nav ul {
     overflow: hidden;
     background-color: #4A91D3; 
     
+} */
+
+/* Navigation */
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 16.5rem;
+    left: 2rem;
 }
 
+.navigation {
+    font-family: "bebas_neuebook", arial solid;
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation.responsive {
+    position: relative;
+}
+ 
+.navigation.responsive li {
+    background-color: #1a9835; 
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+    border: 1px solid #ddd;
+}
+
+.navigation.responsive li a {
+    padding: 1prem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #eee;
+    font-weight: 800;
+}
+
+.navigation.responsive li a:hover {
+    background-color: #17852f;    
+}
+/*
 nav ul li { 
     float: left;
     border-right:1px solid #fff;
@@ -104,7 +150,7 @@ nav ul li.right {float: right;}
     nav ul li.right, 
     nav ul li {float: none;}
 }
-
+*/
 main {
     font-family: "bebas_neuebook", arial narrow;
     background: #BCDDCE;

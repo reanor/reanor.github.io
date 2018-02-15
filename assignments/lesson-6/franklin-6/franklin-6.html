@@ -23,17 +23,20 @@
       <br><br>
   </header>
 
-  <!-- site navigation use placeholder references -->
   <nav>
-    <button onclick="toggleNavMenu()">&#9776;</button>
-    <ul>
+      
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    
+      <ul class="navigation" > 
+          
     	<li><a href="#">Home</a></li>
     	<li class="active"><a href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
     	<li><a href="#">Storm Center</a></li>
     	<li><a href="#">Gallery</a></li>
-    </ul>		
+          
+      </ul>		
   </nav>
     
   <main>
@@ -115,11 +118,10 @@
         (999) 999.999<br />
         contact@theurl.com 
     </p>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | The Weather Pulse | <span id="currentdate">Current Date Placeholder</span></p>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Weather Pulse | <span id="current-date">Placeholder</span></p>
   </footer>
 
-  <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
-
+  <script src="scripts/hamburger.js"></script>
 </body>
 </html>
