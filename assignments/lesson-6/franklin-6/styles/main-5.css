@@ -35,12 +35,6 @@ header {
     background-color: #BCDDCE;
 }
 
-header h1 {
-    font-family: "bebas_neueregular", pmingliu;
-    text-transform: uppercase;
-    color: #0049AF        
-    }
-
 header img {
     float: left;
     border: 0px;
@@ -48,9 +42,23 @@ header img {
     margin: 0px;
 }
 
+@media only screen and (max-width: 500px) {
+header h1 {
+    clear: left;
+    }
+    header img {
+        margin-left: 2.5em;
+    }
+}
+header h1 {
+    font-family: "bebas_neueregular", pmingliu;
+    text-transform: uppercase;
+    color: #0049AF;
+}
+
 header .subheading {
     font-family: "bebas_neueregular", pmingliu;
-    color: #00000C
+    color: #00000C;
     }
 
 /* nav {
@@ -76,7 +84,7 @@ nav ul {
 .hamburger {
     display: block;
     position: absolute;
-    top: 16.5rem;
+    top: 15.5rem;
     left: 2rem;
 }
 

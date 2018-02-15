@@ -7,8 +7,13 @@
   
   article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
 
-
-
+header h1 {
+    clear: left;
+    font-family: "bebas_neueregular", pmingliu;
+    text-transform: uppercase;
+    color: #0049AF;
+}
+    
 .hamburger {
     display: none;
     position: absolute;
