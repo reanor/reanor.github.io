@@ -44,18 +44,13 @@ header img {
 
 @media only screen and (max-width: 500px) {
 header h1 {
-    font-family: "bebas_neueregular", sans-serif;
+    font-size: 6.5vw;
     clear: left;
-    text-transform: none;
-    text-align: center;
-    }
-    header img {
-        margin-left: 2em;
-    }
-    header .subheading {
-        text-align: center;
+    text-transform: lowercase;
+    margin: 0;
     }
 }
+
 header h1 {
     font-family: "bebas_neueregular", pmingliu;
     text-transform: uppercase;
@@ -90,7 +85,7 @@ nav ul {
 .hamburger {
     display: block;
     position: absolute;
-    top: 16rem;
+    top: 13.5rem;
     left: 2rem;
 }
 
@@ -118,7 +113,7 @@ nav ul {
 }
 
 .navigation.responsive li a {
-    padding: 1prem;
+    padding: 1rem;
     text-align: center;
     display: block;
     text-decoration: none;
@@ -231,7 +226,7 @@ table, th, td {
     border: 1px solid black;
 }
 
-.clearfix::after {
+.clearfix:after {
     content: "";
     clear: both;
     display: table;
