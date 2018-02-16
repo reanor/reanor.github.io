@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200");
+
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
@@ -9,29 +11,13 @@ body {
     padding: 0 20px;
     margin: auto;
 }
-    @font-face {
-    font-family: 'bebas_neuebook';
-    src: url('fonts/bebasneue_book-webfont.woff2') format('woff2'),
-         url('fonts/bebasneue_book-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-    @font-face {
-    font-family: 'bebas_neueregular';
-    src: url('fonts/bebasneue_regular-webfont.woff2') format('woff2'),
-         url('fonts/bebasneue_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}  
-  /* Declare the base font-family - from google font api or other */
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
 header {
+    font-family: "Oswald", arial narrow;
     background-color: #BCDDCE;
 }
 
@@ -52,33 +38,13 @@ header h1 {
 }
 
 header h1 {
-    font-family: "bebas_neueregular", pmingliu;
     text-transform: uppercase;
     color: #0049AF;
 }
 
 header .subheading {
-    font-family: "bebas_neueregular", pmingliu;
     color: #00000C;
     }
-
-/* nav {
-    font-family: "bebas_neuebook", arial solid;
-    float: left;
-    padding: 5px 0 0;
-    margin: 8px 0;
-}
-
-nav button {}
-
-nav ul { 
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #4A91D3; 
-    
-} */
 
 /* Navigation */
 
@@ -90,7 +56,7 @@ nav ul {
 }
 
 .navigation {
-    font-family: "bebas_neuebook", arial solid;
+    font-family: "Oswald", arial solid;
     list-style: none;
     padding-left: 0;
     
@@ -125,43 +91,9 @@ nav ul {
 .navigation.responsive li a:hover {
     background-color: #17852f;    
 }
-/*
-nav ul li { 
-    float: left;
-    border-right:1px solid #fff;
-}
 
-nav ul li:last-child {
-    border-right: none;
-}
-
-nav ul li a {
-    display: block;
-    color: #00000C;
-    text-align: center;
-    padding: 10px 16px;
-    text-decoration: none;
-}
-
-nav ul li.active a {
-    color: white;
-    background-color: #0049AF;
-}
-
-nav ul li a:hover {
-    color: white;
-    background-color: #0049AF;
-}
-
-nav ul li.right {float: right;}
-
-@media screen and (max-width: 630px){
-    nav ul li.right, 
-    nav ul li {float: none;}
-}
-*/
 main {
-    font-family: "bebas_neuebook", arial narrow;
+    font-family: "Oswald", arial;
     background: #BCDDCE;
     clear:both;
     padding: 25px 0;
@@ -203,8 +135,8 @@ section {
     margin: 0 5px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 500px) {
-  .forecast { display: none; }  /* hide it on small screens */
+.forecast { 
+    display: none;
 }
 
 .forecast{
@@ -249,7 +181,7 @@ article{
     }
 
 footer {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans;
     color: #fff;
     clear:both;
     text-align: center;

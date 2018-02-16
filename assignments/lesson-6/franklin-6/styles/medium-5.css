@@ -39,4 +39,6 @@
 .navigation a:hover {
     background-color: #17852f;
 }
+
+    .forecast { display: block; }
 }
