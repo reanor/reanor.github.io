@@ -112,6 +112,11 @@ header h1 {
     vertical-align: middle;
 }
 
+.gallery figure {
+    max-width: 200px;
+    image-orientation: center;
+}
+
 @media only screen and (min-width: 800px) {
     .gallery figure:hover {
     box-shadow: 5px 5px 5px gray;
@@ -121,6 +126,7 @@ header h1 {
 main {
     font-family: "Oswald", arial;
     background: #BCDDCE;
+    clear:both;
     padding: 25px 0;
     }
 
@@ -191,6 +197,7 @@ table, th, td {
 
 .clearfix:after {
     content: "";
+    clear: both;
     display: table;
 }
 
@@ -198,25 +205,28 @@ article{
     max-width: 100%; 
     text-align:justify;
     color: #00000C;
+    clear: both;
     padding: 15px 0 0 0;
     margin: 1em 1em 0 1em;
     overflow:auto;
 }
 
 .img_story {
-    width: 50%; 
-    margin: 0 1em 0 1em;
+    max-width: 70%; 
+    margin: 0 0 0 1em;
     }
 
 footer {
     font-family: 'Oswald', sans;
     color: #fff;
+    clear:both;
     text-align: center;
     padding: 0 0 5px;
     background-color: #447CBA; 
 } 
 
 .aside {
+    clear:both;
     text-align: center;
     padding: 5px 0;
     background-color: #4A91D3; 
