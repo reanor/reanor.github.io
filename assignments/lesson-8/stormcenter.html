@@ -18,8 +18,8 @@
 
   <header>
        <img src="images/stormcenter_logo.jpg" alt="Gallery Banner" width="300" height="157">
-       <h1><p>Storm Center</p></h1>
-      <br>
+       <h1>Storm Center</h1>
+      <br><br><br><br>
   </header>
     
  <nav>
@@ -32,7 +32,7 @@
     	<li><a href="franklin-8.html">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
-    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li class="active"><a href="stormcenter.html">Storm Center</a></li>
     	<li><a href="gallery-8.html">Gallery</a></li>
           
       </ul>		
@@ -44,9 +44,9 @@
                 <fieldset>
                     <Legend><span>Personal Information</span></Legend>
                     <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
-                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="name@domain.com" required></label>
+                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="name@domain.com" ></label>
                     <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="1233451234" pattern="[0-9]{10-20}" required></label>
-                    <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="12345" pattern="[0-9]{4-10}" required></label>
+                    <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="12345" required></label>
                 </fieldset>
 
                 <fieldset>
@@ -61,8 +61,8 @@
                     <option value="Thunderstorm"></option>    
                     <option value="Tornado"></option>
                     </datalist></label>
-                    <label for="sType"><span>Storm Severity (1-10): <output for="sType" id="sTypeN">1</output></span>
-                    <input type="range" min="1" max="10" value="1" id="sType" step="1" oninput="outputUpdate(value)">
+                    <label><span>Storm Severity (1-10): <output for="sType" id="sTypeN">1</output></span></label>
+                    <label><input type="range" min="1" max="10" value="1" id="sType" step="1" oninput="outputUpdate(value)">
                     </label>
                     <label><span>Storm Region:</span>
                         <select name="sRegion">
@@ -72,11 +72,10 @@
                             <option value="springfield">Springfield</option>
                         </select>
                     </label>
-                    <label><span>Are you in Danger:</span>
-                        <input type="radio" name="dangerlvl" value="Yes" > Yes<br>
-                        <input type="radio" name="dangerlvl" value="Maybe"> Maybe<br>
-                        <input type="radio" name="dangerlvl" value="No" checked> No
-                    </label>                
+                    <label><span>Are you in Danger:</span></label> 
+                        <label><input type="radio" name="dangerlvl" value="Yes" > Yes</label>
+                        <label><input type="radio" name="dangerlvl" value="Maybe"> Maybe</label>
+                        <label><input type="radio" name="dangerlvl" value="No" checked> No</label>                                   
                 </fieldset>
                 <fieldset>
                     <legend><span>Additional Information</span></legend>   

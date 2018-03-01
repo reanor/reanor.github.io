@@ -115,7 +115,6 @@ header h1 {
 
 .gallery figure {
     max-width: 200px;
-    image-orientation: center;
 }
 
 @media only screen and (min-width: 800px) {
