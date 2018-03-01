@@ -6,7 +6,7 @@ table {
 }
 
 .mytable {
-    box-shadow: 5px 14px 5px gray;
+    box-shadow: 5px 5px 5px gray;
     height: 21.8em;
     width: 20em;
 }
@@ -37,7 +37,7 @@ caption {
 }
 
 tfoot{
-    font-size: 0.65em;
+    font-size: 0.8em;
 }
 
 thead th:nth-child(1) {

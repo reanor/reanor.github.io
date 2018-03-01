@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200");
+
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {    
+    font-size: 16px;
+    max-width: 56em;
+    border: 0px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    text-align: center;
+    font-family: "Oswald", arial narrow;
+    background-color: #BCDDCE;
+}
+
+header img {
+    max-width: 100%;
+    border: 0px;
+    padding: 5px 3px;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+header h1 {
+    max-width: 100%;
+    font-size: 6.5vw;
+    text-transform: lowercase;
+    margin: 0;
+    }
+}
+
+header h1 {
+    text-transform: uppercase;
+    color: #0049AF;
+}
+
+.subheading {
+    color: #00000C;
+    align-self: flex-end;
+    }
+
+/* Navigation */
+
+.hamburger {
+    display: flex;
+    position: absolute;
+    top: 13.5rem;
+    left: 2rem;
+}
+
+.navigation {
+    font-family: "Oswald", arial solid;
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation.responsive {
+    position: relative;
+}
+ 
+.navigation.responsive li {
+    justify-content: center;
+    background-color: #1a9835;
+    display: flex;
+    width: 100%;
+    margin: 2px 0;
+    border: 1px solid #ddd;
+}
+
+.navigation.responsive li a {
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #eee;
+    font-weight: 600;
+}
+
+.navigation.responsive li a:hover {
+    background-color: #17852f;   
+}
+
+.gallery {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 5px;
+    text-align: center;
+    padding: 0 4px;
+    background: #BCDDCE;
+    border: #0049af solid 1px;
+    color: black;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid;
+    vertical-align: middle;
+}
+
+.gallery figure {
+    max-width: 200px;
+    image-orientation: center;
+}
+
+@media only screen and (min-width: 800px) {
+    .gallery figure:hover {
+    box-shadow: 5px 5px 5px gray;
+    }
+}
+
+/* Severe Weather Submission form begin */
+    
+fieldset {
+    background-color: #BCDDCE;
+    margin: 1.5em 0;
+    border: #0049af solid 1px;
+}
+
+legend {
+    font-family: 'Oswald', sans;
+    color: #fff;
+    margin-right: auto;
+    border: #0049af solid 1px;
+    background-color: #4a99d3;
+
+}
+
+label{
+    display: block;
+    margin: .5em;
+
+}
+
+label span{
+    display: block;
+    font-size: .8em;
+    color: #0049af;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input.submitBtn {
+
+}
+
+#content {
+    width: 100%;
+    float: none;	
+}
+	
+	/* Severe Weather Submission Form end */
+
+main {
+    font-family: "Oswald", sans;
+    background: #BCDDCE;
+    clear:both;
+    padding: 25px 0;
+    }
+
+h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #00000C;
+}
+
+main figure { 
+    margin: 0 2% .2rem 2%; 
+    width:96%;
+    }
+
+main figure img { 
+      width:100%;
+}
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;    
+    color: #00000C;
+    width: auto;
+    height: auto;
+}
+
+.highlow{
+    width: 15%;
+
+}
+
+.current{
+    width: 55%;
+
+    }
+
+.windchill {
+    width: 20%;
+}
+
+.conditions {
+    flex: auto;
+}
+
+
+
+.forecast { 
+    display: none;
+}
+
+.forecast{
+    padding: 15px 0 0 0;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left:auto; 
+    margin-right:auto;
+    }
+
+table, th, td {
+    height: 30px;
+    vertical-align: bottom;
+    border: 1px solid black;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+article{
+    max-width: 100%; 
+    text-align:justify;
+    color: #00000C;
+    clear: both;
+    padding: 15px 0 0 0;
+    margin: 1em 1em 0 1em;
+    overflow:auto;
+}
+
+.img_story {
+    max-width: 70%; 
+    margin: 0 0 0 1em;
+    }
+
+footer {
+    font-family: 'Oswald', sans;
+    color: #fff;
+    clear:both;
+    text-align: center;
+    padding: 0 0 5px;
+    background-color: #447CBA; 
+} 
+
+.aside {
+    clear:both;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #4A91D3; 
+} 
+
+footer>p {
+}/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
