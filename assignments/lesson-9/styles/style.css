@@ -5,8 +5,10 @@ html {
 }
 
 body {
-  width: 800px;
-  margin: 0 auto;
+    margin: 0 auto;
+    border: 0px;
+    padding: 0 20px;
+    margin: auto;
 }
 
 h1, h2 {
@@ -30,11 +32,26 @@ header p {
   text-align: center;
 }
 
+
+h2 {
+  text-align: center;
+  text-decoration: overline;
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
+}
+
+
 /* section styles */
 
+section {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 5px;
+}
+
 section article {
-  width: 33%;
-  float: left;
 }
 
 section p {
@@ -44,12 +61,8 @@ section p {
 
 section ul {
   margin-top: 0;
+  list-style-position:inside;
+  text-align: center;
+
 }
 
-h2 {
-  text-align: center;
-  text-decoration: overline;
-  font-size: 2.5rem;
-  letter-spacing: -5px;
-  margin-bottom: 10px;
-}

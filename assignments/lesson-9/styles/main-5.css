@@ -158,17 +158,11 @@ input.submitBtn {
 
 }
 
-#content {
-    width: 100%;
-    float: none;	
-}
-	
-	/* Severe Weather Submission Form end */
+/* Severe Weather Submission Form end */
 
 main {
     font-family: "Oswald", sans;
     background: #BCDDCE;
-    clear:both;
     padding: 25px 0;
     }
 
@@ -176,6 +170,11 @@ h2, h3 {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     color: #00000C;
+}
+
+.container h4 {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 main figure { 
@@ -187,89 +186,54 @@ main figure img {
       width:100%;
 }
 .container {
-    text-align: center;
-    display: flex;
+    margin-left: 3em;
+    margin-right: 3em;
+    display: grid;
     justify-content: center;
-    flex-wrap:wrap;    
     color: #00000C;
-    width: auto;
-    height: auto;
+    text-align: center;
 }
 
-.highlow{
-    width: 15%;
-
+#currentW {
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.current{
-    width: 55%;
-
-    }
-
-.windchill {
-    width: 20%;
-}
-
-.conditions {
-    flex: auto;
-}
-
-
-
-.forecast { 
-    display: none;
-}
-
-.forecast{
-    padding: 15px 0 0 0;
-
-}
-
-table {
-    border-collapse: collapse;
-    width: 90%;
-    margin-left:auto; 
-    margin-right:auto;
-    }
-
-table, th, td {
-    height: 30px;
-    vertical-align: bottom;
-    border: 1px solid black;
-}
-
-.clearfix:after {
-    content: "";
-    clear: both;
-    display: table;
+#windMph {
+    margin-top: 2px;
+    margin-bottom: 10px;
 }
 
 article{
-    max-width: 100%; 
-    text-align:justify;
+    max-width: 100%;
     color: #00000C;
-    clear: both;
     padding: 15px 0 0 0;
     margin: 1em 1em 0 1em;
-    overflow:auto;
+}
+
+/* section styles */
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .img_story {
-    max-width: 70%; 
-    margin: 0 0 0 1em;
+    max-width: 100%; 
+    margin: auto;
+    display: flex;
     }
 
 footer {
     font-family: 'Oswald', sans;
     color: #fff;
-    clear:both;
     text-align: center;
     padding: 0 0 5px;
     background-color: #447CBA; 
 } 
 
 .aside {
-    clear:both;
     text-align: center;
     padding: 5px 0;
     background-color: #4A91D3; 

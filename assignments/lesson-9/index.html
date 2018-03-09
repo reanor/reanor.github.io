@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Weather Pulse | Little Weather Platform</title>
+  <meta name="author" content="Andrew G. Svahins">
+  <meta name="description" content="The Weather Pulse - is an online weather platform, that allows different audience groups to check the changes in the weather in 3 different cities.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+</head>
+<body>
+
+  <header>
+    <img src="/images/logo.jpg" alt="The site logo">
+        <h1>The Weather Pulse</h1>
+        <div class="subheading">"Reliable and dependable"</div>
+      <br><br>
+  </header>
+
+  <nav>
+      
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    
+      <ul class="navigation" > 
+          
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="franklin-8.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-8.html">Gallery</a></li>
+          
+      </ul>	
+      
+  </nav>
+    
+  <main>
+      
+    <h2>Town Home</h2>
+    <figure>
+      <img src="images/franklin-large.jpg" alt="Franklin" sizes = "96vw" 
+           srcset="images/franklin-small.jpg     400w,
+                   images/franklin-medium.jpg    800w,
+                   images/franklin-large.jpg     1000w ">
+    </figure>
+      
+      <section>
+
+      </section>
+      
+  </main>
+        
+  <footer>
+    <p  class="aside">
+        The Weather Pulse<br />
+        123 Main St.<br />
+        Franklin, MU 83454<br />
+        (999) 999.999<br />
+        contact@theurl.com 
+    </p>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Weather Pulse | <span id="current-date">Placeholder</span></p>
+  </footer>
+  <script src="scripts/jsHomeScript.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/hamburger.js"></script>
+</body>
+</html>

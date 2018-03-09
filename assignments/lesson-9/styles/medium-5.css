@@ -3,14 +3,9 @@
   
   /* nav button { display:none; }  hamburger button does not need to be shown */
   
-  section.forecast { display: block }  /* show the 10-day forecast with the medium view and up */
+  section.forecast { display: flex }  /* show the 10-day forecast with the medium view and up */
   
-  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
-
-.img_story {
-    max-width: 70%; 
-    margin: 0 0 0 1em;
-    }
+  article p.town-article img { width: 62.666%; }  /* responsive images */
 
 .hamburger {
     display: none;
