@@ -21,5 +21,15 @@ request.onload = function() {
     elem.setAttribute("alt", "weather");
     document.getElementById("imageW").appendChild(elem);
     elem.src = franklinWeather.current_observation.icon_url;
+    
+    document.getElementById('wunderDesc').innerHTML = 'Made possible by: '+ franklinWeather.current_observation.image.title;
+    
+    var elem1 = document.createElement("img");
+    elem1.setAttribute("alt", "logo");
+    document.getElementById("wunder").appendChild(elem1);
+    elem1.src = franklinWeather.current_observation.image.url;
+    
+    document.getElementById("wunderLink").innerHTML = franklinWeather.current_observation.image.link;
+    
 }
 

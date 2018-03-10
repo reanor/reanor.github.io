@@ -211,6 +211,10 @@ article{
     margin: 1em 1em 0 1em;
 }
 
+#forecastDesc {
+     margin-bottom: 20px;
+}
+
 /* section styles */
 
 section {
