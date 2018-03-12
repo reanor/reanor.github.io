@@ -49,8 +49,63 @@
            >
     </figure>
       
-          <h3>Weather Summary</h3>
-      <div class="container">
+      <h3>Weather Summary</h3>
+      
+    <section class="container">
+      <div class="highlow">
+          <p>High: <b>90&deg;F</b></p>  
+          <p>Low: <b>66&deg;F</b></p>  
+      </div>
+      <div class="current">
+          <b>Sunny</b>
+        <div class="image">
+          <img src="images/sun-regular.png" alt="Sun">
+        </div>
+      </div>
+      <div class="windchill">
+          <p>Windchill factor: <b><span id="chill">0&deg;F</span></b></p>  
+      </div> 
+      <div class="conditions">
+          <p>Change of Precipitation: <b>0%</b></p>  
+        <p>Max Wind Speed: <b>5 mpg SW</b></p>  
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+      <div class="container1">
           
         <div id="imageW"> </div>
         <h4 id="currentW"> </h4>
@@ -85,8 +140,7 @@
     </p>
     <p class="footer-bar">&copy;2017 All Rights Reserved | The Weather Pulse | <span id="current-date">Placeholder</span></p>
   </footer>
-  
-  <script src="scripts/wu-weather1.js"></script> 
+  <script src="scripts/windchill.js"></script>
   <script src="scripts/wu-weather.js"></script>
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/hamburger.js"></script>
