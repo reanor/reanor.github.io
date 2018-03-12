@@ -1,0 +1,64 @@
+/* || general styles */
+
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+    margin: auto;
+    padding: 10px;
+}
+
+h1, h2 {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+/* header styles */
+
+h1 {
+  font-variant-caps: all-petite-caps;
+  text-decoration: underline;
+  font-size: 4rem;
+  text-align: center;
+}
+
+header p {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+h2 {
+  text-align: center;
+  text-decoration: overline;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+
+/* section styles */
+
+section {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    }
+
+section article {
+}
+
+section p {
+  text-align: center;
+  margin: 5px 0;
+}
+
+section ul {
+  margin-top: 0;
+  list-style-position:inside;
+  text-align: center;
+
+}
+
