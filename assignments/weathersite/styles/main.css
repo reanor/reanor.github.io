@@ -25,7 +25,7 @@ header {
 header img {
     max-width: 100%;
     border: 0px;
-    padding: 5px 3px;
+    padding: 3px;
     margin: 0px;
 }
 
@@ -53,7 +53,7 @@ header h1 {
 .hamburger {
     display: flex;
     position: absolute;
-    top: 13.5rem;
+    top: 9rem;
     left: 2rem;
 }
 
