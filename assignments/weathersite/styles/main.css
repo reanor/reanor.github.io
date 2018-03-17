@@ -200,21 +200,18 @@ main figure img {
 }
 
 .highlow{
-    width: 15%;
-
-}
-
-.current{
     width: 55%;
 
-    }
+}
 
 .windchill {
     width: 20%;
+    margin-right: 10px;
 }
 
 .conditions {
-    flex: auto;
+    flex: 15%;
+    margin-left: 10px;
 }
 
 .forecast { 
