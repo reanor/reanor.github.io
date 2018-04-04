@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mountain Spoke</title>
+  <meta name="author" content="Andrew G. Svahins">
+  <meta name="description" content="‘The Mountain Spoke' is a fictitious online shop located in Bozeman, Montana. We specialize in all things bycicle - accessories, parts, repairs, and tours.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="The site logo" width="250" height="100">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">"Culture of bicycle enthusiasm"</div>
+      <br><br>
+  </header>
+
+  <nav>
+      
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    
+      <ul class="navigation" > 
+          
+    	<li class="active"><a href="index.php">Home</a></li>
+    	<li><a href="tours.html">Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="contact.html">Contact Us</a></li>
+          
+      </ul>	
+      
+  </nav>
+    
+  <main>
+      
+    <h2>Biking For Everyone</h2>
+      
+  <figure>
+      <img src="images/bikestore-large.jpg" alt="BikeStore" sizes = "96vw" 
+           srcset="images/bikestore-small.jpg     400w,
+                   images/bikestore-medium.jpg    800w,
+                   images/bikestore-large.jpg    1000w "
+           >
+      <br>
+      <br>
+      What is biking... Is it riding your trusted two-weeled friend across a gorgeous scenic trail, blazing through a crystal clear air of our local resorts, polishing your biking skills on our cross terain tracks, or maybe, it is finding few good reliable friends that will help you no matter the distance? It is every individual thing and all of them together! Help us to ensure that our scenic cross country and cross terrain tracks are preserved for the future generations and keep the biking sport alive, growing and sustainable! Join us today!
+      <br>
+      <br>
+  </figure>
+  <section>
+
+  </section>
+  </main>
+        
+  <footer>
+    <p  class="aside">
+        The Mountain Spoke<br />
+        3950 Valley Commons Dr.<br />
+        Bozeman, MT 59718<br />
+        (999) 999-999<br />
+        contact@thebikestore.com
+    </p>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="current-date">Placeholder</span></p>
+  </footer>
+  <script src="scripts/jsonData.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/hamburger.js"></script>
+</body>
+</html>

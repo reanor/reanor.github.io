@@ -1,0 +1,22 @@
+{
+  "events" : [
+  {
+    "name": "Local Events and Programs",
+    "description": "The Mountain Bike Program - aimed at youth aged 8-17 with low to medium experience on a mountain bike. We have groups for those new to the sport of downhill mountain biking, as well as for those looking to build on their existing downhilling skills."
+  },
+  {
+    "name": "Camping and Biking",
+    "description": "Allows groups of medium experienced bikers to engage in the cross terrain multiple-day adventure. Traverse multiple trails ranging from easily accessible cruise areas, to the slopy areas with daily breaks for camping at the most scenic locations on the trail."
+  },
+
+  {
+    "name": "Downhill Mountain Biking",
+    "description": "Take a lift up, bike down on one of the 14 downhill trails at Big Sky Resort. You can rent one of our bikes or bring your own. All you'll need is a bike haul lift ticket or bike haul season pass, available for purchase at our store."
+  },
+
+  {
+    "name": "Prepare and conquer",
+    "description": "Buy all the necessary parts and accessories to make all your biking experiences count. We have multiple daily promotions that will allow you to tune your bike and prepare for that one of a kind biking experience."
+  }
+ ]
+}

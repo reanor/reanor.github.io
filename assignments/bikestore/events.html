@@ -1,0 +1,69 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <meta name="author" content="Andrew G. Svahins">
+  <meta name="description" content="‘The Mountain Spoke' is a fictitious online shop located in Bozeman, Montana. We specialize in all things bycicle - accessories, parts, repairs, and tours.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header>
+       <img src="images/logo.png" alt="Gallery Banner" width="250" height="100">
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">"Culture of bicycle enthusiasm"</div>
+      <br><br>
+  
+  </header>
+    
+    <nav>
+      
+    <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    
+      <ul class="navigation" > 
+          
+    	<li class="active"><a href="index.php">Home</a></li>
+    	<li><a href="tours.html">Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="contact.html">Contact Us</a></li>
+          
+      </ul>		
+  </nav>
+  <main>
+  <h2>The Cities Gallery</h2>
+  </main>
+      <div class="gallery">
+              <figure><img src="images/weather-windy-350.jpg " alt="Picture1" width="250" height="200"><figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</figcaption></figure>
+              <figure><img src="images/weather-raining-350.jpg" alt="Picture2" width="250" height="200"><figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</figcaption></figure>
+              <figure><img src="images/weather-windy1-350.jpg" alt="Picture3" width="250" height="200"><figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</figcaption></figure>
+              <figure><img src="images/weather-sunny-350.jpg" alt="Picture4" width="250" height="200"><figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</figcaption></figure>
+              <figure><img src="images/weather-raining1-350.jpg" alt="Picture5" width="250" height="200"><figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</figcaption></figure>
+              <figure><img src="images/weather-cloudy1-350.jpg" alt="Picture6" width="250" height="200"><figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</figcaption></figure>
+      </div> 
+
+  <footer>
+    <p  class="aside">
+        The Mountain Spoke<br />
+        3950 Valley Commons Dr.<br />
+        Bozeman, MT 59718<br />
+        (999) 999-999<br />
+        contact@thebikestore.com
+    </p>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="current-date">Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>
