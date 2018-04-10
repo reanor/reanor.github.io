@@ -103,16 +103,13 @@ nav ul li.active a {
 
 .gallery {
     justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     grid-template-columns: repeat(auto-fill, 250px);
     grid-gap: 5px;
-    text-align: center;
     padding: 0 4px;
     background: #e9e3d7;
     color: black;
 }
-
 
 .gallery img {
     max-width: 100%;
@@ -287,6 +284,7 @@ table, th, td {
 
 
 .container1 {
+    margin-left: 3em;
     margin-right: 3em;
     display: grid;
     text-align: justify;
