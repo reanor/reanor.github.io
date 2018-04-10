@@ -19,7 +19,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 
 header {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: 'Roboto Medium', sans-serif;
     background-color: #e9e3d7;
 }
 
@@ -56,7 +56,7 @@ header h1 {
 .hamburger {
     display: flex;
     position: absolute;
-    top: 4.5rem;
+    top: 9.5rem;
     left: 2rem;
 }
 
@@ -161,7 +161,7 @@ fieldset {
 }
 
 legend {
-    font-family: 'Roboto';
+    font-family: 'Roboto Regular', sans-serif;
     color: #fff;
     margin-right: auto;
     border: #0049af solid 1px;
@@ -190,7 +190,7 @@ input.submitBtn {
 /* Severe Weather Submission Form end */
 
 main {
-    font-family: 'Roboto', regular;
+    font-family: 'Roboto Regular', sans-serif;
     background: #e9e3d7;
     padding: 25px 0;
     }
@@ -330,7 +330,7 @@ section {
     }
 
 footer {
-    font-family: 'Roboto' Thin;
+    font-family: 'Roboto Thin', sans-serif;
     color: #e9e3d7;
     text-align: center;
     padding: 0 0 5px;
