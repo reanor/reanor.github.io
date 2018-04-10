@@ -1,0 +1,78 @@
+{
+    "services" : [
+        {
+        "nameT" : "Tune-Ups",
+        "descriptionT" : "The Tune-Ups ensure bicycle safety and reliability. Ask your local Bike PRO how to keep your bike in peak condition with our variety of Tune-Ups."
+        },
+        {
+        "tuneup1" : "Basic Tune-Up",
+        "tprice1" : "$39.99"
+        },
+        {
+        "tuneup2" : "Premium Tune-Up",
+        "tprice2" : "$69.99"
+        },
+        {
+        "tuneup3" : "Brake System Tune-Up",
+        "tprice3" : "$24.99"
+        },
+        {
+        "tuneup4" : "Drivetrain Tune-Up",
+        "tprice4" : "$24.99"
+        },
+        {
+        "tuneup5" : "Bike Build",
+        "tprice5" : "$39.99"
+        },
+
+        {
+        "nameR" : "Adjustments & Repairs",
+        "descriptionR" : "Our Bike PROS can make adjustments and repairs following accidental damage and wear and tear to your brakes, drivetrain, shifters, derailleurs, wheels and more."
+        },
+        {
+        "repair1" : "Install Inner Tube",
+        "rprice1" : "$6.99"
+        },
+        {
+        "repair2" : "Repair Inner Tube",
+        "rprice2" : "$8.99"
+        },
+        {
+        "repair3" : "True Wheel",
+        "rprice3" : "$12.99"
+        },
+        {
+        "repair4" : "Overhaul Front Hub",
+        "rprice4" : "$14.99"
+        },
+        {
+        "repair5" : "Overhaul Rear Hub",
+        "rprice5" : "$18.99"
+        },
+
+        {
+        "nameI" : "Installations",
+        "descriptionI" : "From kickstands to child carriers, we can install and replace accessories to customize your bike, so it's ready for your next journey."
+        },
+        {
+        "installation1" : "Child Carrier",
+        "iprice1" : "$14.99"
+        },
+        {
+        "installation2" : "Cycle Computer",
+        "iprice2" : "$9.99"
+        },
+        {
+        "installation3" : "Fenders",
+        "iprice3" : "$12.99"
+        },
+        {
+        "installation4" : "Rear Rack",
+        "iprice4" : "$4.99"
+        },
+        {
+        "installation5" : "Training Wheels",
+        "iprice5" : "$12.99"
+        }
+    ]
+}
