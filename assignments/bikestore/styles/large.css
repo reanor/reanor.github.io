@@ -4,3 +4,7 @@
   article p.town-article img { width: 29.333%; }
   
 }
+
+.toursSmall { 
+    display: none; }
+}

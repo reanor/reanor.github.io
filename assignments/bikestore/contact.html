@@ -27,65 +27,33 @@
       
     <button class="hamburger" onclick="toggleHam()">&#9776;</button>
     
-      <ul class="navigation" > 
-          
-    	<li class="active"><a href="index.php">Home</a></li>
-    	<li><a href="tours.html">Tours</a></li>
-    	<li><a href="events.html">Events</a></li>
-    	<li><a href="sales.html">Sales</a></li>
-    	<li><a href="services.html">Services</a></li>
-    	<li><a href="contact.html">Contact Us</a></li>
-          
+      <ul class="navigation" >           
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+
       </ul>		
   </nav>
 <main>
-  <h2>Severe Weather Submission Form</h2>
- 
-    <form action="thanks.html" method="get" name="submission" id="subform">
-                <fieldset>
-                    <Legend><span>Personal Information</span></Legend>
-                    <label><span>*required field</span></label>
-                    <label><span>Full Name:*</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
-                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="name@domain.com" ></label>
-                    <label><span>Phone:*</span><input name="phone" type="tel" value="" placeholder="(123) 345-1234" pattern="^[0-9\-\+\s\(\)]*$" required></label>
-                    <label><span>Zip Code:*</span><input name="zipcode" type="number" value="" placeholder="12345" required></label>
-                </fieldset>
+  <h2>Contact Form</h2>
 
-                <fieldset>
-                    <legend><span>Severe Weather Information</span></legend>
-                    <label><span>Storm Date:</span><input name="stormday" type="date"></label>
-                    <label><span>Storm Type:</span>
-                    <input type="text" name="stormType" list="stormTypes">
-                    <datalist id="stormTypes">
-                    <option value="Flash Flood"></option>
-                    <option value="Hail"></option>    
-                    <option value="Hurricane"></option>    
-                    <option value="Thunderstorm"></option>    
-                    <option value="Tornado"></option>
-                    </datalist></label>
-                    <label><span>Storm Severity (1-10): <output for="sType" id="sTypeN">1</output></span></label>
-                    <label><input type="range" min="1" max="10" value="1" id="sType" step="1" oninput="outputUpdate(value)">
-                    </label>
-                    <label><span>Storm Region:</span>
-                        <select name="sRegion">
-                            <option value="select" selected disabled>Select Region...</option>
-                            <option value="franklin">Franklin</option>
-                            <option value="greenville">Greenville</option>
-                            <option value="springfield">Springfield</option>
-                        </select>
-                    </label>
-                    <label><span>Are you in Danger:</span></label> 
-                        <label><input type="radio" name="dangerlvl" value="Yes" > Yes</label>
-                        <label><input type="radio" name="dangerlvl" value="Maybe"> Maybe</label>
-                        <label><input type="radio" name="dangerlvl" value="No" checked> No</label>                                   
-                </fieldset>
-                <fieldset>
-                    <legend><span>Additional Information</span></legend>   
-                    <textarea name="comms" rows="4" cols="30" wrap="hard">
-                    </textarea>
-                </fieldset>
-                    <input type="submit" value="Submit" class="submitBtn">
-          </form>
+    <form action="thanks1.html" method="get" name="registration" id="subform">
+        <fieldset>
+            <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
+            <label><span>Email:</span><input name="email" type="email" value="" placeholder="name@domain.com" required></label>
+            <label><span>Message:</span>
+            <textarea name="comms" rows="4" cols="30" wrap="hard" required>
+            </textarea></label>   
+            <input id="submit_button" type="submit" value="Submit" />
+        </fieldset>
+    </form>
+    <h3>Our Location</h3>
+    <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277611033!2d-111.0929061848519!3d45.67227287910395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1522682703281" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
     </main>
 
   <footer>
@@ -98,8 +66,7 @@
     </p>
     <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="current-date">Placeholder</span></p>
   </footer>
-  
-  <script src="scripts/sType.js"></script>
+  <script src="scripts/wayfinding.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
 

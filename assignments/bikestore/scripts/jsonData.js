@@ -1,6 +1,6 @@
 var section = document.querySelector('section');
 
-var requestURL = 'https://reanor.github.io/biking/data/events.json';
+var requestURL = 'https://raw.githubusercontent.com/reanor/reanor.github.io/master/assignments/bikestore/data/events.json';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
@@ -19,14 +19,14 @@ function showEvents(jsonObj) {
     { 
         
     var myArticle = document.createElement('article');
-    var myH2 = document.createElement('h2');
+    var myH3 = document.createElement('h3');
     var myPara1 = document.createElement('p');
             
-    myH2.textContent = activities[i].name;
-    myPara1.textContent = 'Event Description: ' + activities[i].description;
+    myH3.textContent = activities[i].name;
+    myPara1.textContent = activities[i].description;
     activities[i].currentPopulation;
         
-    myArticle.appendChild(myH2);
+    myArticle.appendChild(myH3);
     myArticle.appendChild(myPara1);
     section.appendChild(myArticle);
     

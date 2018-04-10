@@ -26,7 +26,7 @@
     background-color: #e12c00; 
 }
 
-.navigation a {
+.navigation li a {
     color: #eee;
     padding: .5rem;
     text-align: center;
@@ -39,11 +39,15 @@
     background-color: #553585;
 }
     
-li.active {
+nav ul li.active a {
     background-color: #001f6e;
 }
     
-.forecast { 
+section.tours { 
     text-align: center;
     display: flex; }
+    
+section.toursSmall { 
+    display: none; }
 }
+

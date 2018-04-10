@@ -10,6 +10,7 @@ body {
     border: 0px;
     padding: 0 20px;
     margin: auto;
+    color: #16171b;
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -18,7 +19,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 
 header {
     text-align: center;
-    font-family: 'Roboto', Medium;
+    font-family: 'Roboto';
     background-color: #e9e3d7;
 }
 
@@ -34,16 +35,20 @@ header h1 {
     text-transform: lowercase;
     margin: 0;
     }
+    .subheading {
+        font-size: 0.8em;
+    }
 }
 
 header h1 {
     text-transform: uppercase;
     color: #553585;
-}
+    margin-bottom: 0;
+    margin-top: 10px;
+    }
 
 .subheading {
     color: #00000C;
-    align-self: flex-end;
     }
 
 /* Navigation */
@@ -89,16 +94,17 @@ header h1 {
 }
 
 .navigation.responsive li a:hover:not(.active) {
-    background-color: #e12c00;
+    background-color: #553585;
 }
 
-li.active {
+nav ul li.active a {
     background-color: #553585;
 }
 
 .gallery {
     justify-content: center;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fill, 250px);
     grid-gap: 5px;
     text-align: center;
@@ -106,6 +112,7 @@ li.active {
     background: #e9e3d7;
     color: black;
 }
+
 
 .gallery img {
     max-width: 100%;
@@ -116,6 +123,7 @@ li.active {
 
 .gallery figure {
     max-width: 200px;
+    padding: 5px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -124,12 +132,32 @@ li.active {
     }
 }
 
+figcaption {
+    text-align:justify;
+}
+
 /* Severe Weather Submission form begin */
     
 fieldset {
-    background-color: #BCDDCE;
+    background-color: #e9e3d7;
     margin: 1.5em 0;
-    border: #0049af solid 1px;
+    border: #e12c00 solid 1px;
+}
+
+.map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin: 1em 1em 0 1em;
+    text-align: center;
+}
+.map iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 legend {
@@ -137,7 +165,7 @@ legend {
     color: #fff;
     margin-right: auto;
     border: #0049af solid 1px;
-    background-color: #4a99d3;
+    background-color: #553585;
 
 }
 
@@ -167,12 +195,18 @@ main {
     padding: 25px 0;
     }
 
-h2, h3 {
+h2, h3, h4 {
     text-align: center;
-    color: #16171b;
+    color: #553585;
+    
 }
 
 .container1 h4 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.services h4 {
     margin-top: 2px;
     margin-bottom: 2px;
 }
@@ -183,7 +217,7 @@ main figure {
     }
 
 main figure img { 
-      width:100%;
+    width:100%;
 }
 
 .container {
@@ -211,13 +245,24 @@ main figure img {
     margin-left: 10px;
 }
 
-.forecast { 
+section.tours { 
     display: none;
+    }
+
+section.toursSmall { 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    }
+
+section.tours{
+    padding: 15px 0 0 0;
 }
 
-.forecast{
+section.services{
     padding: 15px 0 0 0;
-
+    text-align: center;
 }
 
 table {
@@ -225,6 +270,7 @@ table {
     width: 90%;
     margin-left:auto; 
     margin-right:auto;
+    font-size: 0.8em;
     }
 
 table, th, td {
@@ -241,12 +287,10 @@ table, th, td {
 
 
 .container1 {
-    margin-left: 3em;
     margin-right: 3em;
     display: grid;
-    justify-content: center;
+    text-align: justify;
     color: #00000C;
-    text-align: center;
 }
 
 #currentW {
@@ -259,15 +303,15 @@ table, th, td {
     margin-bottom: 10px;
 }
 
-article{
+.description{
     max-width: 100%;
-    color: #00000C;
-    padding: 15px 0 0 0;
-    margin: 1em 1em 0 1em;
+    margin: 0 10px;
+    padding: 1px 0 0 0;
+    text-align: justify;
 }
 
-#forecastDesc {
-     margin-bottom: 20px;
+#accordion {
+    font-size: 0.8em;
 }
 
 /* section styles */
@@ -278,6 +322,7 @@ section {
     justify-content: center;
 }
 
+
 .img_story {
     max-width: 100%; 
     margin: auto;
@@ -286,14 +331,15 @@ section {
 
 footer {
     font-family: 'Roboto' Thin;
-    color: #553585;
+    color: #e9e3d7;
     text-align: center;
     padding: 0 0 5px;
-    background-color: #e9e3d7; 
+    background-color: #553585; 
 } 
 
 .aside {
     text-align: center;
+    color: #553585;
     padding: 5px 0;
     background-color: #e9e3d7; 
 } 

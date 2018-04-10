@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sales</title>
+  <title>The Mountain Spoke Sales</title>
   <meta name="author" content="Andrew G. Svahins">
   <meta name="description" content="‘The Mountain Spoke' is a fictitious online shop located in Bozeman, Montana. We specialize in all things bycicle - accessories, parts, repairs, and tours.">
   <!-- external style references in the proper cascading order -->    
@@ -12,7 +12,11 @@
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
   <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
-  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 
@@ -29,7 +33,7 @@
     
       <ul class="navigation" > 
           
-    	<li class="active"><a href="index.php">Home</a></li>
+    	<li class="active"><a href="index.html">Home</a></li>
     	<li><a href="tours.html">Tours</a></li>
     	<li><a href="events.html">Events</a></li>
     	<li><a href="sales.html">Sales</a></li>
@@ -40,88 +44,50 @@
   </nav>
     
   <main>
-    <h2>The City of Greenville</h2>
+    <h2>Bike Store</h2>
     <figure>
-      <img src="images/greenville-large.jpg" alt="Franklin" sizes = "96vw" 
-           srcset="images/greenville-small.jpg     400w,
-                   images/greenville-medium.jpg    800w,
-                   images/greenville-large.jpg     1000w "
+      <img src="images/sales-large.jpg" alt="Franklin" sizes = "96vw" 
+           srcset="images/sales-small.jpg     400w,
+                   images/sales-medium.jpg    800w,
+                   images/sales-large.jpg     1000w "
            >
     </figure>
       
-          <h3>Weather Summary</h3>
-      
-      <section class="container">
-      <div class="conditions">
-          <p>Change of Precipitation: <b>10%</b></p>  
-        <p>Max Wind Speed: <b>10 mpg SW</b></p>  
-      </div> 
-      <div class="highlow">
-          <p>High: <b>85&deg;F</b></p>  
-          <p>Low: <b>60&deg;F</b></p>  
-      </div>
-      <div class="windchill">
-          <p>Windchill factor: <b><span id="chill">0&deg;F</span></b></p>  
-      </div> 
-          
-    </section>
-        
-    <section class="forecast">
-      <h3>10 Day Forecast</h3>
-      <table>
-	    <thead>
-          <tr>
-            <th>Day 1</th>
-            <th>Day 2</th>
-            <th>Day 3</th>
-            <th>Day 4</th>
-            <th>Day 5</th>
-            <th>Day 6</th>
-            <th>Day 7</th>
-            <th>Day 8</th>
-            <th>Day 9</th>
-            <th>Day 10</th>
-          </tr>
-		</thead>
-        <tbody>  
-          <tr>
-            <td>84&deg;F</td>
-            <td>84&deg;F</td>
-            <td>80&deg;F</td>
-            <td>75&deg;F</td>
-            <td>72&deg;F</td>
-            <td>70&deg;F</td>
-            <td>75&deg;F</td>
-            <td>75&deg;F</td>
-            <td>77&deg;F</td>
-            <td>85&deg;F</td>
-          </tr>
-		</tbody>
-      </table>
-    </section>
-      <br><br>
-      <div class="container1">
-          
-        <div id="imageW"> </div>
-        <h4 id="currentW"> </h4>
-        <h4 id="currentT"> </h4>
-        <h4 id="windMph"> </h4> 
-
-        <div id="forecastDesc"> </div>
-        ---------------------------------------
-        <div id="wunderDesc"></div>
-        <div id="wunder"></div>
-        <div id="wunderLink"></div>
-
-      </div>  
-      
-    <article>
-      <h3>Greenville Breaks Record</h3>	
-      <p class="clearfix" style="clear:right">
-        <img class="img_story" src="images/greenville-history.jpg" alt="Franklin Breaks Record"><br>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-      </p>
-    </article>		  
+<div id="accordion">
+  <h3>Entry Level</h3>
+  <div>
+      <b><p>Gravity 24 Speed FSX 2.0</p></b>
+    <img src="images/gravity.jpg" alt="GravityBike" width="150" height="100">  
+    <p>
+    A great quality, affordable entry level 24 speed dual suspension road bike and one of our best sellers. It features an Advanced aluminum frame with Single Pivot technology, adjustable rear coil over cartridge shock, Shimano drivetrain and a adjustable front shock!
+    </p>
+    <ul>
+      <li>$379.00</li>
+    </ul>
+  </div>
+  <h3>Performance Level</h3>
+  <div>
+    <b><p>Marin Hawk Hill 27.5</p></b>
+    <img src="images/marin.jpg" alt="MarinBike" width="100" height="100"> 
+    <p>
+    If you want to take your trail riding to a whole new level, the Marin Hawk Hill 27.5" mountain bike is a great way to do it. By providing excellent performance and value, the Hawk Hill will redefine your expectations on the trail. It starts with a Series 3 6061 aluminum full suspension frame, built around the incredibly versatile 27.5" wheel platform.
+    </p>
+    <ul>
+      <li>$1,399.99</li>
+    </ul>
+  </div>
+  <h3>Professional Level</h3>
+  <div>
+    <b><p>Canyon Spectral 6.0 Alu</p></b>
+    <img src="images/canyon.jpg" alt="CanyonBike" width="150" height="100"> 
+    <p>
+    Every mountain biking discipline, from XC to enduro through to DH, all grew from the inspiration of riders wanting to head out and have some serious fun on the trails. The Spectral AL 6.0 fits the bill as a trail bike that can take on enduro races, but has the playful geometry that will encourage you to try new runs.
+    </p>
+    <ul>
+      <li>$2,500</li>
+    </ul>
+  </div>
+</div>		  
   
   </main>
     
@@ -135,8 +101,8 @@
     </p>
     <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="current-date">Placeholder</span></p>
   </footer>
-  <script src="scripts/windchill1.js"></script>
-  <script src="scripts/wu-weather1.js"></script> 
+  <script src="scripts/wayfinding.js"></script>
+  <script src="scripts/accordion.js"></script>
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/hamburger.js"></script>
 </body>
