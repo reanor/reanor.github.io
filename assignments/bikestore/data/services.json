@@ -1,10 +1,6 @@
 {
     "services" : [
         {
-        "nameT" : "Tune-Ups",
-        "descriptionT" : "The Tune-Ups ensure bicycle safety and reliability. Ask your local Bike PRO how to keep your bike in peak condition with our variety of Tune-Ups."
-        },
-        {
         "tuneup1" : "Basic Tune-Up",
         "tprice1" : "$39.99"
         },
@@ -23,11 +19,6 @@
         {
         "tuneup5" : "Bike Build",
         "tprice5" : "$39.99"
-        },
-
-        {
-        "nameR" : "Adjustments & Repairs",
-        "descriptionR" : "Our Bike PROS can make adjustments and repairs following accidental damage and wear and tear to your brakes, drivetrain, shifters, derailleurs, wheels and more."
         },
         {
         "repair1" : "Install Inner Tube",
@@ -48,11 +39,6 @@
         {
         "repair5" : "Overhaul Rear Hub",
         "rprice5" : "$18.99"
-        },
-
-        {
-        "nameI" : "Installations",
-        "descriptionI" : "From kickstands to child carriers, we can install and replace accessories to customize your bike, so it's ready for your next journey."
         },
         {
         "installation1" : "Child Carrier",
